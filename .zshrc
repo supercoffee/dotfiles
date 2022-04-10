@@ -13,7 +13,9 @@ export CLICOLOR_FORCE=1
 unsetopt nomatch
 
 # Nicer prompt.
-export PS1=$'\n'"%F{green} %*%F %3~ %F{white}"$'\n'"$ "
+#export PS1=$'\n'"%F{green} %*%F %3~ %F{white}"$'\n'"$ "
+
+export PS1="%n@%m[%B%F{green}%d%f%b]%F{yellow}%*%f"$'\n'"$ "
 
 # Enable plugins.
 plugins=(git brew history kubectl history-substring-search)
